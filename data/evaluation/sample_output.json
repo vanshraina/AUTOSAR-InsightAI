@@ -1,0 +1,14 @@
+{
+  "question": "Which components publish vehicle speed?",
+  "answer": "The most relevant source passages are listed below. Use them as evidence and verify the interpretation with the architecture owner: [sample_autosar_hld.pdf, p. 1] VehicleSpeedService publishes VehicleSpeedSignal through VehicleSpeedInterface.",
+  "grounded": true,
+  "evidence": [
+    {
+      "document_name": "sample_autosar_hld.pdf",
+      "page": 1,
+      "score": "runtime-dependent",
+      "text": "VehicleSpeedService publishes VehicleSpeedSignal through VehicleSpeedInterface."
+    }
+  ],
+  "note": "Illustrative schema only. Actual scores and passages depend on runtime ingestion."
+}

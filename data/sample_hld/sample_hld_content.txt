@@ -1,0 +1,23 @@
+SYNTHETIC AUTOSAR HIGH-LEVEL DESIGN
+Document ID: DEMO-HLD-001
+Revision: A
+Classification: Synthetic training example — not an OEM artifact
+
+1. System overview
+The Vehicle Dynamics domain provides vehicle-speed information to braking and driver-assistance functions.
+VehicleSpeedService publishes VehicleSpeedSignal through VehicleSpeedInterface. BrakeController consumes
+VehicleSpeedSignal and depends on VehicleSpeedService. The signal is sampled by the vehicle dynamics layer.
+
+2. Cabin monitoring
+CabinMonitor reads CabinTemperatureSignal and DoorStatusSignal. CabinMonitor reports cabin status to
+VehicleStatusManager through CabinStatusInterface. VehicleStatusManager coordinates status reporting for the
+vehicle display. This example is illustrative only and is not a normative AUTOSAR design.
+
+3. Interface summary
+VehicleSpeedInterface: producer VehicleSpeedService; consumer BrakeController; payload VehicleSpeedSignal.
+CabinStatusInterface: producer CabinMonitor; consumer VehicleStatusManager; payload CabinTemperatureSignal
+and DoorStatusSignal.
+
+4. Engineering review notes
+Confirm interface definitions, data types, update rates, timing constraints, runnable mappings, and error handling
+against the approved detailed design. Candidate dependencies extracted by InsightAI must be reviewed.

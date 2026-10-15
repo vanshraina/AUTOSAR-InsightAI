@@ -1,0 +1,56 @@
+{
+  "dataset_name": "AUTOSAR InsightAI Starter Evaluation Set",
+  "version": "1.0",
+  "purpose": "Synthetic starter fixtures for validating the pipeline; not a representative benchmark.",
+  "cases": [
+    {
+      "id": "Q001",
+      "question": "Which component publishes VehicleSpeedSignal?",
+      "expected_terms": [
+        "VehicleSpeedService",
+        "VehicleSpeedSignal"
+      ],
+      "expected_pages": [
+        2
+      ]
+    },
+    {
+      "id": "Q002",
+      "question": "Which component consumes VehicleSpeedSignal?",
+      "expected_terms": [
+        "BrakeController",
+        "VehicleSpeedSignal"
+      ],
+      "expected_pages": [
+        2
+      ]
+    },
+    {
+      "id": "Q003",
+      "question": "Which interface carries vehicle speed?",
+      "expected_terms": [
+        "VehicleSpeedInterface"
+      ],
+      "expected_pages": [
+        2
+      ]
+    },
+    {
+      "id": "Q004",
+      "question": "What is the role of CabinMonitor?",
+      "expected_terms": [
+        "CabinMonitor"
+      ],
+      "expected_pages": [
+        3
+      ]
+    },
+    {
+      "id": "Q005",
+      "question": "Explain lunar geology unrelated to this HLD",
+      "expected_terms": [],
+      "expected_pages": [],
+      "should_abstain": true
+    }
+  ]
+}

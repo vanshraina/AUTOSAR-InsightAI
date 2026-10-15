@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "metrics": [
+    {
+      "name": "entity_precision",
+      "definition": "TP / (TP + FP) over engineer-reviewed entity predictions",
+      "unit": "ratio",
+      "target": "Set after gold-set baseline"
+    },
+    {
+      "name": "entity_recall",
+      "definition": "TP / (TP + FN) over engineer-labelled gold entities",
+      "unit": "ratio",
+      "target": "Set after gold-set baseline"
+    },
+    {
+      "name": "entity_f1",
+      "definition": "2 * precision * recall / (precision + recall)",
+      "unit": "ratio",
+      "target": "Set after gold-set baseline"
+    },
+    {
+      "name": "retrieval_hit_at_5",
+      "definition": "Questions with at least one expected evidence page in top 5 / answerable questions",
+      "unit": "ratio",
+      "target": "Set after gold-set baseline"
+    },
+    {
+      "name": "citation_validity",
+      "definition": "Returned citations whose document and page exist / all returned citations",
+      "unit": "ratio",
+      "target": "100%"
+    },
+    {
+      "name": "abstention_quality",
+      "definition": "Unanswerable questions for which system avoids unsupported claims / all unanswerable questions",
+      "unit": "ratio",
+      "target": "100% on reviewed test set"
+    },
+    {
+      "name": "reviewed_change_precision",
+      "definition": "Engineer-confirmed revision changes / all proposed changes",
+      "unit": "ratio",
+      "target": "Set after gold-set baseline"
+    }
+  ],
+  "reporting_note": "These are definitions and proposed evaluation criteria, not measured results."
+}

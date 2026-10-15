@@ -1,0 +1,68 @@
+{
+  "dataset": "AUTOSAR InsightAI Starter Evaluation Set",
+  "note": "Small synthetic smoke evaluation only; not a production accuracy claim.",
+  "retrieval_term_hit_rate_answerable": 0.75,
+  "abstention_success_rate": 1.0,
+  "candidate_entity_counts": {
+    "components": 4,
+    "interfaces": 2,
+    "signals": 3,
+    "dependencies": 0
+  },
+  "cases": [
+    {
+      "id": "Q001",
+      "question": "Which component publishes VehicleSpeedSignal?",
+      "grounded": true,
+      "expected_terms_found_in_evidence": true,
+      "evidence_pages": [
+        2
+      ],
+      "expected_pages": [
+        2
+      ]
+    },
+    {
+      "id": "Q002",
+      "question": "Which component consumes VehicleSpeedSignal?",
+      "grounded": true,
+      "expected_terms_found_in_evidence": true,
+      "evidence_pages": [
+        2
+      ],
+      "expected_pages": [
+        2
+      ]
+    },
+    {
+      "id": "Q003",
+      "question": "Which interface carries vehicle speed?",
+      "grounded": false,
+      "expected_terms_found_in_evidence": false,
+      "evidence_pages": [],
+      "expected_pages": [
+        2
+      ]
+    },
+    {
+      "id": "Q004",
+      "question": "What is the role of CabinMonitor?",
+      "grounded": true,
+      "expected_terms_found_in_evidence": true,
+      "evidence_pages": [
+        3
+      ],
+      "expected_pages": [
+        3
+      ]
+    },
+    {
+      "id": "Q005",
+      "question": "Explain lunar geology unrelated to this HLD",
+      "grounded": false,
+      "expected_terms_found_in_evidence": true,
+      "evidence_pages": [],
+      "expected_pages": []
+    }
+  ]
+}
